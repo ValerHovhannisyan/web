@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Archive Admin Panel</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>University Archive Admin Panel</h1>
+    </header>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="admin-archives.html">Archives</a></li>
+                <li><a href="users/index.html">Users</a></li>
+                <li><a href="register/index.html">Change Archives</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <h2>Dashboard</h2>
+            <p>Welcome to the admin dashboard. Here, you can manage various aspects of the University Archive.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 University Archive. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Logout functionality
+        const logoutLink = document.getElementById('logout');
+        logoutLink.addEventListener('click', () => {
+            // Redirect to the main page (index.html)
+            window.location.href = "../index.html";
+        });
+    </script>
+</body>
+</html>
